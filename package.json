@@ -1,0 +1,18 @@
+{
+    "name": "simple-react-project",
+    "version": "1.0.0",
+    "description": "Generator for a simple React project",
+    "scripts":
+    {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "copy": "rm -rf dist && mkdir dist && cp src/index.html dist/index.html",
+        "build-dev": "npm run copy && webpack-dev-server --inline --hot"
+    },
+    "author": "Eric Henke",
+    "license": "ISC",
+    "preferGlobal": true,
+    "bin":
+    {
+        "simple-react": "./lib/index.js"
+    }
+}
